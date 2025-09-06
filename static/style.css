@@ -31,7 +31,7 @@ label {
     color: #555;
 }
 input[type="text"], input[type="email"] {
-    width: 100%;
+    width: 60%;
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
