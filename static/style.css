@@ -8,14 +8,7 @@ h1 {
     color: #4682b4;
     font-size: 36px;
 }
-.form-container {
-    display: inline-block;
-    text-align: left;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+.form-container 
 ul {
     list-style-type: none;
     padding: 0;
