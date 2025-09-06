@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ล็อกอิน</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ล็อกอินเพื่อดูคำขอ</h1>
+    <div class="form-container">
+        <form action="/login" method="post">
+            <label for="email">อีเมล:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="เข้าสู่ระบบ">
+        </form>
+    </div>
+</body>
+</html>

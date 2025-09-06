@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แบบฟอร์มการจัดส่งพัสดุ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>แบบฟอร์มการจัดส่งพัสดุ</h1>
+    <div class="form-container">
+        <form action="/submit" method="post">
+            <label for="sender_name">ชื่อผู้จัดส่ง:</label><br>
+            <input type="text" id="sender_name" name="sender_name"><br><br>
+            <label for="study_room">ห้องที่กำลังศึกษา:</label><br>
+            <input type="text" id="study_room" name="study_room"><br><br>
+            <label for="pickup_location">สถานที่รับของ:</label><br>
+            <input type="text" id="pickup_location" name="pickup_location"><br><br>
+            <label for="receiver_name">ชื่อผู้รับ:</label><br>
+            <input type="text" id="receiver_name" name="receiver_name"><br><br>
+            <label for="delivery_location">สถานที่จัดส่ง:</label><br>
+            <input type="text" id="delivery_location" name="delivery_location"><br><br>
+            <label for="item_to_deliver">ของที่จะจัดส่ง:</label><br>
+            <input type="text" id="item_to_deliver" name="item_to_deliver"><br><br>
+            <label for="desired_delivery_time">เวลาที่ต้องการให้ของถึง:</label><br>
+            <input type="text" id="desired_delivery_time" name="desired_delivery_time"><br><br>
+            <input type="submit" value="ส่งข้อมูล">
+        </form>
+    </div>
+</body>
+</html>

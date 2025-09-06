@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>คำขอทั้งหมด</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>รายการคำขอทั้งหมด</h1>
+    {% if requests %}
+        <ul>
+            {% for req in requests %}
+            <li>
+                <p><strong>ชื่อผู้จัดส่ง:</strong> {{ req.sender_name }}</p>
+                <p><strong>ห้องที่กำลังศึกษา:</strong> {{ req.study_room }}</p>
+                <p><strong>สถานที่รับของ:</strong> {{ req.pickup_location }}</p>
+                <p><strong>ชื่อผู้รับ:</strong> {{ req.receiver_name }}</p>
+                <p><strong>สถานที่จัดส่ง:</strong> {{ req.delivery_location }}</p>
+                <p><strong>ของที่จะจัดส่ง:</strong> {{ req.item_to_deliver }}</p>
+                <p><strong>เวลาที่ต้องการให้ของถึง:</strong> {{ req.desired_delivery_time }}</p>
+                <p><strong>เวลาที่ส่ง:</strong> {{ req.timestamp }}</p>
+            </li>
+            <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>ยังไม่มีคำขอเข้ามา</p>
+    {% endif %}
+    <p><a href="/">กลับหน้าแรก</a> | <a href="/logout">ออกจากระบบ</a></p>
+</body>
+</html>
