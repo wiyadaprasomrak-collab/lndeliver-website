@@ -60,7 +60,7 @@ def submit():
             return render_template('success.html')
         else:
             return "กรุณากรอกข้อมูลให้ครบถ้วน"
-    return render_template('submit_form.html')
+    return render_template('submit_from.html')
 
 @app.route('/requests')
 def view_requests():
