@@ -54,8 +54,10 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 a {
-    color: #4682b4;
+    color: 	#3333CC;
     text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
 }
 a:hover {
     text-decoration: underline;
